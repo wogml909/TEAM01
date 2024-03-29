@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;SessionListener&apos; to &apos;Session&apos;&#x0D;&#x0A;- Original project: &apos;13_JSP_EL&apos;&#x0D;&#x0A;- Original element: &apos;13_JSP_EL/src/main/java/SessionListener&apos;&#x0D;&#x0A;- Renamed element: &apos;13_JSP_EL/src/main/java/Session&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;SessionListener&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java&lt;SessionListener" name="Session" qualified="false" references="true" stamp="1711684810152" textual="false" version="1.0"/>
+</session>

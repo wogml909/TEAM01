@@ -1,0 +1,5 @@
+package shop.DAO.Users;
+
+public class UserDAO extends JDBConnecton{
+
+}

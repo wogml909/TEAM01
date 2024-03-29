@@ -1,0 +1,6 @@
+package shop.DTO;
+
+public class Users {
+  private String id;
+  
+}

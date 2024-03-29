@@ -1,0 +1,26 @@
+<%@page import="java.util.concurrent.atomic.AtomicInteger"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>EL applicationScope</title>
+</head>
+<body>
+  <h1> EL applicationScope</h1>
+  
+  
+  <%
+     //application 객체에서 접속자 수를 가져오거나 초기화
+     AtomicInteger visitorCount = (AtomicInteger) application.getAttribute("visitorCount");
+  if(visitorCount == null){
+	   visitorCount = new AtomicInteger(0);
+	   application.setAttribute("visitorCount", visitorCount);
+	  
+  }
+  //접속자 술르 1 증가 시킵니다.
+  int currentCount = visitorCount.incrementAndGet();
+  %>
+</body>
+</html>

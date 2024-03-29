@@ -1,0 +1,44 @@
+package filter;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.Filter;
+import javax.servlet.FilterChain;
+import javax.servlet.FilterConfig;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+
+public class AuthenFilter implements Filter {
+
+	@Override
+	public void destroy() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
+			throws IOException, ServletException {
+		// 필터 기능 작성
+		System.out.println("AuthenFilter 필터 - doFilter() ...");
+		
+		// name 파라미터를 필터링
+		String name = request.getParameter("name");
+		
+		// name이 null 이거나 빈 문자열이면 필터에서 걸러준다.
+		if (name == null || name.equals("")) {
+			response.setContentType("text/html; charset=UTF-8");
+			PrintWriter writer = response.getWriter();
+			String 
+		}
+	}
+
+	@Override
+	public void init(FilterConfig filterConfig) throws ServletException {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

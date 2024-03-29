@@ -1,0 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>EL - session</title>
+</head>
+<body>
+  <h1>sessionScope EL 내장객체</h1>
+  <%
+    session.setAttribute("userId","JOEUN");
+  %>
+  <h1>로그인된 아이디 : ${ sessionScope.userId }</h1>
+</body>
+</html>

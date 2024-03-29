@@ -1,0 +1,9 @@
+id
+password
+name
+gender
+birth
+mail
+join_date
+reg_date
+upd_date

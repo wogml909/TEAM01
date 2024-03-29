@@ -1,0 +1,41 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+  <%-- 변수 선언 --%>
+  <%
+    int num01 = 10;
+    int num02 = 20;
+  %>
+  <%-- EL을 사용하여 변수 값 표시 --%>
+  <H1>첫 번째 숫자 : ${num1}</H1>
+  <H1>두 번째 숫자 : ${num1}</H1>
+  
+  <%--EL을 사용하여 변수 값 변경 --%>
+  <h1>num1 + num2 = ${num1 + num2}</h1>
+  <h1>num1 + num2 = ${num1 - num2}</h1>
+  
+  <%-- 문자열 연결 --%>
+  <% String name1 = "THE"; %>
+  <% String name2 = "JOEUN"; %>
+  <h1>이름 : ${name1} ${name2}</h1>
+  
+  <%
+    class Board {
+	   String title;
+	  
+  }
+  Board board = new Board();
+  board.title = "제목입니다!";
+  pageContext.setAttribute("board", board);
+  %>
+  <%--객체 접근 --%>
+  <h1>board 의 title : ${board.title}</h1>
+  
+</body>
+</html>
