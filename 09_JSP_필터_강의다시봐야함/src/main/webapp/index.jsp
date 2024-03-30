@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>확인</title>
+<title>메인 화면</title>
 </head>
 <body>
-	<h1>확인</h1>
+	<h1>메인 화면</h1>
 </body>
 </html>

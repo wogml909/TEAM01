@@ -12,8 +12,9 @@
 </head>
 <body>
 	<h1>회원 가입</h1>
-	<c:if test="${ param.msg }"></c:if>
-	<p style="color: red;">회원가입에 실패하였습니다.</p>
+	<c:if test="${ param.msg }">
+	  <p style="color: red;">회원가입에 실패하였습니다.</p>
+	</c:if>
 	<form action="join_pro.jsp" method="post">
 		<p>
 			<label for="id">아이디</label>

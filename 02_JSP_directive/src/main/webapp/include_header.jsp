@@ -7,9 +7,13 @@
 <title>헤더</title>
 </head>
 <body>
-	<footer>
-		<p>푸터 영역</p>
-		<p><%= copy %></p>
-	</footer>
+	<header>
+	  <h1>헤더 영역</h1>
+	 <ul>
+		<li><a href=""><%= menu1 %></a></li>
+		<li><a href=""><%= menu2 %></a></li>
+		<li><a href=""><%= menu3 %></a></li>
+	</ul>	
+	</header>
 </body>
 </html>

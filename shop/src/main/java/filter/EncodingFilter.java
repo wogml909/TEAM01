@@ -20,22 +20,25 @@ public class EncodingFilter implements Filter {
 		encoding = filterConfig.getInitParameter("encoding");
 	}
 	
+
 	@Override
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
-		System.out.println("인코딩 필터 : " + encoding);
 		// 요청 응답 시, 문자 인코딩 설정
 		request.setCharacterEncoding(encoding);
 		response.setCharacterEncoding(encoding);
 		
 		// 다음 필터로 요청/응답 전달
 		chain.doFilter(request, response);
+		
 	}
 	
 	@Override
 	public void destroy() {
 		// 필터가 소멸될 때 실행되는 메소드
 	}
+
+
 
 	
 

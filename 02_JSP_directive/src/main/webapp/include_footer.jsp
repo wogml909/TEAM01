@@ -4,17 +4,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>헤더</title>
+<title>푸터</title>
 </head>
 <body>
-	<header>
-		<h1>헤더 영역</h1>
-		<ul>
-			<li> <a href=""><%= menu1 %></a> </li>
-			<li> <a href=""><%= menu2 %></a> </li>
-			<li> <a href=""><%= menu3 %></a> </li>
-		</ul>
-		
-	</header>
+  <footer>
+     <p>푸터 영역</p>
+     <p><%= copy %></p>
+     <%@ include file="copy.txt" %>
+  </footer>
 </body>
 </html>

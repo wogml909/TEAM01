@@ -43,10 +43,10 @@ public class JDBConnection {
 		}
 		
 	}
-	
-	// public static void main(String[] args) {
-	// 	JDBConnection jdbc = new JDBConnection();
-	// }
+//	
+//	 public static void main(String[] args) {
+//	 	JDBConnection jdbc = new JDBConnection();
+//	 }
 
 }
 
